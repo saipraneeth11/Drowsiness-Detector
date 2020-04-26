@@ -1,16 +1,11 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Mar 29 16:50:39 2020
 
-@author: SaiPr
-"""
 
 import numpy as np
 import dlib 
 import cv2
 
 detector = dlib.get_frontal_face_detector()
-predictor = dlib.shape_predictor('D:/spyder file/opencv/smart selfie/shape_predictor_68_face_landmarks.dat')
+predictor = dlib.shape_predictor('shape_predictor_68_face_landmarks.dat')
 #here the detector detects the number of faces in the image and returns the bounding box
 #here we use the predictor to get the 68 co-ordinates 
  
